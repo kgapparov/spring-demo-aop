@@ -9,6 +9,6 @@ import org.springframework.stereotype.Component;
 public class MyLoggingAspect {
     @Before("execution(public void addAccount())")
     public void addAccountLogging(){
-        System.out.println("Logging before execution method addAccount");
+        System.out.println("===>Logging before execution method addAccount");
     }
 }
