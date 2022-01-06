@@ -29,4 +29,8 @@ public class MyLoggingAspect {
     public void addAccountLogging(){
         System.out.println("===>Logging before execution method addAccount");
     }
+    @Before("execution (* add*(com.luv2code.aopdemo.Account))")
+    public void addAccountLogginsecond(){
+        System.out.println("====> Logging before execution method with PARAMETER joints");
+    }
 }
